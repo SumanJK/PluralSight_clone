@@ -1,5 +1,5 @@
 let navigation = () => {
-    return (`
+  return `
     <div><a href="./index.html"><img
               src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/global/header/PS_logo.png"
               alt=""></a>
@@ -10,35 +10,27 @@ let navigation = () => {
             <li id="platbtn">Platform <span>&#9662</span></li>
             <li id="prodbtn">Products <span>&#9662</span></li>
             <li id="resobtn">Resourses <span>&#9662</span></li>
-            <li><a href="./for-individuals.html">For Individuals</a></li>
+            <li>For Individuals</li>
           </ul>
         </div>
         <div>
           <div>
             <img id="img" src="https://cdn-icons-png.flaticon.com/128/622/622669.png" alt="">
           </div>
-          <div>
+          <div id="signinid">
             <p id="signinbtn">Sign in <span>&#9662</span></p>
           </div>
           <div>
-            <a href="free-try.html"><button>TRY FOR FREE</button></a>
+            <a class="tryForFree" href="free-try.html"><button>TRY FOR FREE</button></a>
           </div>
         </div>
-        `)
-}
+        `;
+};
 
-let searchpart = () => {
-    return (`
-    <div id="searchItem">
-    <i class="fa fa-search"></i>
-    <input type="text" id="searchInput" placeholder="What do you want to learn?" />
-    <span id="p">&times;</span>
-  </div>
-    `)
-}
+
 
 let popuppart = () => {
-    return (`
+  return `
     <div id="platform">
         <div>
           <div class="box">
@@ -232,7 +224,7 @@ let popuppart = () => {
       </div>
       <div id="navSignin">
         <div>
-          <div class="">
+          <div id="dissolveOnSignOut">
             <div>
               <div>
                 <h4><a href="./signin.html">SIGN IN WITH</a></h4>
@@ -250,7 +242,7 @@ let popuppart = () => {
 
             <div>
               <div>
-                <h4><a href="/signin.html">SIGN IN WITH</a></h4>
+                <h4><a href="./signin.html">SIGN IN WITH</a></h4>
               </div>
               <div>
                 <a href="./signin.html">
@@ -264,7 +256,7 @@ let popuppart = () => {
           </div>
         </div>
       </div>
-    `)
-}
+    `;
+};
 
-export { navigation, searchpart, popuppart };
+export { navigation, popuppart };
